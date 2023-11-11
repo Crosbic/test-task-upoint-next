@@ -21,7 +21,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <CssBaseline />
 
         <Header />
-        <Component {...pageProps} />
+        <main>
+          <Component {...pageProps} />
+        </main>
       </ThemeProvider>
     </>
   )

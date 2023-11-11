@@ -1,9 +1,52 @@
 .wrapper {
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     background-color: #071d4a;
 }
 
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+}
+
+.button_group {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.button_auth_group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.button_signin_text {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(to bottom right, #289ff8, #b740fd);
+    border-radius: 3rem;
+}
+
+.button_signin_text:hover {
+    color: #8de3fe;
+    background: linear-gradient(to bottom right, #11496f, #471a62);
+}
+
+.button_reg_border {
+    background: linear-gradient(to bottom right, #11496f, #471a62);
+    border: 2px transparent solid;
+    border-radius: 3rem;
+}
+
+.button_reg {
+    color: rgb(255, 255, 255);
+    background-color: #071d4a;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 3rem;
+    display: inline-block;
 }

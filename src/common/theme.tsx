@@ -14,7 +14,7 @@ export const theme = createTheme(
     },
     typography: {
       fontFamily: 'GothamPro Medium',
-      fontSize: 14,
+      fontSize: 12,
     },
   },
   ruRU

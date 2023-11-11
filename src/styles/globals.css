@@ -4,16 +4,22 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  background-image: url("../../public/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+body {
+  background-color:rgba(0,18,38,0.85);
+  margin: 0;
 }
 
-body {
-  margin: 0;
-  background:rgba(0,18,38,0.85);
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+  min-height: calc(100vh - 4rem);
+  gap: 2rem;
+  background-image: url("../../public/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 @font-face {
@@ -28,5 +34,12 @@ body {
 }
 
 a {
+  color: #8de3fe;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #ffffff;
+  transition: ease-in-out 0.2s;
 }
