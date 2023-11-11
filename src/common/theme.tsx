@@ -13,7 +13,7 @@ export const theme = createTheme(
       },
     },
     typography: {
-      fontFamily: 'GothamPro Medium',
+      fontFamily: 'Gotham Pro, Gotham Pro Medium',
       fontSize: 12,
     },
   },

@@ -4,49 +4,100 @@
     background-color: #071d4a;
 }
 
-.container {
+.header_container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.button_group {
+.header_conteiner__logo {
+    display: flex;
+    align-self: center;
+}
+
+.header_container__buttons_group {
     display: flex;
     gap: 2rem;
     padding: 0 2rem;
+    font-weight: bold;
 }
 
-.button_auth_group {
+.header_container__buttons_group__auth_group {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #ffffff;
+    color: #fff;
 }
 
-.button_signin_text {
-    color: rgb(255, 255, 255);
-    padding: 0.5rem 1.5rem;
-    background: linear-gradient(to bottom right, #289ff8, #b740fd);
-    border-radius: 3rem;
-}
-
-.button_signin_text:hover {
-    color: #8de3fe;
-    background: linear-gradient(to bottom right, #11496f, #471a62);
-}
-
-.button_reg_border {
-    background: linear-gradient(to bottom right, #11496f, #471a62);
-    border: 2px transparent solid;
-    border-radius: 3rem;
-}
-
-.button_reg {
-    color: rgb(255, 255, 255);
-    background-color: #071d4a;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid transparent;
-    border-radius: 3rem;
+.header_container__buttons_group__auth_group__button_signin__bg {
+    color: #fff;
+    padding: 0.5rem;
     display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+.header_container__buttons_group__auth_group__button_signin__bg:hover {
+    color: #8de3fe;
+    transition: ease-in 0.2s;
+}
+
+.header_container__buttons_group__auth_group__button_signin__bg:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 2px;
+    border-radius: 3rem;
+    background: linear-gradient(to bottom right, #289ff8 calc(60% - 10px), #b740fd calc(40% + 20px));
+}
+
+.header_container__buttons_group__auth_group__button_signin__text {
+    padding: 0 1rem;
+}
+
+.header_container__buttons_group__auth_group__button_reg_bg {
+    color: #fff;
+    padding: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+.header_container__buttons_group__auth_group__button_reg_bg:hover {
+    color: #8de3fe;
+    transition: ease-in 0.2s;
+}
+
+.header_container__buttons_group__auth_group__button_reg_bg:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 2px;
+    border-radius: 3rem;
+    background: linear-gradient(to bottom right, #289ff8 calc(60% - 10px), #b740fd calc(40% + 20px));
+    mask: linear-gradient(#fff 0, #fff 0) content-box,  linear-gradient(#fff 0, #fff 0);
+    mask-composite: exclude;
+}
+
+.header_container__buttons_group__auth_group__button_reg_text {
+    padding: 0 1rem
+}
+
+.header_container__langauge_choice_container {
+    margin: 0 0 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.header_container__langauge_choice_container__text {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 255, 255, 0.4);
+    cursor: pointer;
 }

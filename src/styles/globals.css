@@ -5,7 +5,10 @@ body {
 }
 
 body {
-  background-color:rgba(0,18,38,0.85);
+  background-image: url("../../public/background.png");
+  background-position-y: 4rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 0;
 }
 
@@ -14,17 +17,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 4rem 6rem;
   min-height: calc(100vh - 4rem);
   gap: 2rem;
-  background-image: url("../../public/background.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color:rgba(0,18,38,0.85);
 }
 
 @font-face {
-  font-family: 'GothamPro Medium';
-  src: local('GothamPro Medium'), url("../../public/fonts/GothamPro-Medium.woff")format("woff"), url("../../public/fonts/Gotham Pro.ttf");
+  font-family: 'GothamPro';
+  font-weight: normal;
+  src: local('GothamPro'), url("../../fonts/GothamPro.woff") format("woff"), url("../../fonts/GothamPro.ttf");
 }
 
 @media (prefers-color-scheme: dark) {
