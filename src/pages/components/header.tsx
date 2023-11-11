@@ -1,11 +1,18 @@
 import { Typography } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+
+import ModalLogin from '@/pages/components/modalLogin'
 
 import styles from './header.module.css'
 
 const Header = () => {
+  const [open, setOpen] = useState(false)
+
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.header_container}>
@@ -46,9 +53,11 @@ const Header = () => {
                 className={
                   styles.header_container__buttons_group__auth_group__button_signin__text
                 }
+                onClick={handleOpen}
               >
                 Вход
               </Typography>
+              <ModalLogin open={open} onClose={handleClose} />
             </div>
           </Link>
           <Link href="/">
