@@ -41,6 +41,7 @@
 .header_container__buttons_group__auth_group__button_signin__bg:hover {
     color: #8de3fe;
     transition: ease-in 0.2s;
+    cursor: pointer;
 }
 
 .header_container__buttons_group__auth_group__button_signin__bg:before {
@@ -55,6 +56,7 @@
 
 .header_container__buttons_group__auth_group__button_signin__text {
     padding: 0 1rem;
+    text-transform: uppercase;
 }
 
 .header_container__buttons_group__auth_group__button_reg_bg {
@@ -68,6 +70,7 @@
 .header_container__buttons_group__auth_group__button_reg_bg:hover {
     color: #8de3fe;
     transition: ease-in 0.2s;
+    cursor: pointer
 }
 
 .header_container__buttons_group__auth_group__button_reg_bg:before {
@@ -83,7 +86,8 @@
 }
 
 .header_container__buttons_group__auth_group__button_reg_text {
-    padding: 0 1rem
+    padding: 0 1rem;
+    text-transform: uppercase
 }
 
 .header_container__langauge_choice_container {
