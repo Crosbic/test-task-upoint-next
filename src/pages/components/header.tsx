@@ -57,7 +57,6 @@ const Header = () => {
               >
                 Вход
               </Typography>
-              <ModalLogin open={open} onClose={handleClose} />
             </div>
           </Link>
           <Link href="/">
@@ -90,6 +89,7 @@ const Header = () => {
           </Typography>
         </div>
       </div>
+      <ModalLogin open={open} onClose={handleClose} />
     </div>
   )
 }
